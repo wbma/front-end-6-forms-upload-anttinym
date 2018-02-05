@@ -1,0 +1,20 @@
+<h1>REGISTER</h1>
+<form>
+  <input id="username" type="text" placeholder="Username"
+         required
+         [(ngModel)]="mediaService.username" name="username">
+  <br>
+  <input id="password" type="password" placeholder="Password"
+         required
+         [(ngModel)]="mediaService.password" name="password">
+  <br>
+  <input id="email" type="email" placeholder="Email"
+         required
+         [(ngModel)]="mediaService.email" name="email">
+  <br>
+  <input id="full_name" type="text" placeholder="Full name"
+         required
+         [(ngModel)]="mediaService.full_name" name="full_name">
+  <br>
+  <button (click)="register()">Register</button>
+</form>
